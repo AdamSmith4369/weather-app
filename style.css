@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #318ed3;
+}
+
+img {
+  width: 43%;
+  height: 10rem;
+  border-radius: 30px;
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  box-shadow: 3px 3px 20px 10px black;
+}
+
+h1 {
+  color: #c3112d;
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  margin-top: 0.5rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-shadow: 3px 3px 7px black;
+}
+
+form {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+#input {
+  border: none;
+  background-color: #318ed3;
+  border-bottom: 2px solid white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  outline: none;
+  margin-right: 0.8rem;
+}
+::placeholder {
+  color: white;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#button {
+  color: white;
+  background-color: #c3112d;
+  padding: 1rem 1.8rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px 2px black;
+}
+
+#button:active {
+  transform: scale(0.97);
+}
+
+.ul li {
+  background-color: #e3e9ee;
+  width: 15%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 30px;
+  align-items: center;
+  box-shadow: 3px 20px 10px 3px rgb(56, 55, 55);
+}
+
+.city-icon {
+  width: 5rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+  box-shadow: 2px 4px 10px 5px #318ed3;
+}
+figcaption {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+ul {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.city-name sup {
+  color: red;
+  background-color: yellow;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 12px;
+}
+.city-name span {
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.city-temp {
+  color: black;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 700px) {
+  .div1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0rem 2rem;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #button {
+    font-size: 2rem;
+    text-transform: uppercase;
+    width: 98%;
+  }
+
+  .ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    align-items: center;
+    margin-right: 2rem;
+    gap: 1rem;
+  }
+  .ul li {
+    width: 92%;
+  }
+}
